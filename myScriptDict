@@ -1,0 +1,8 @@
+#!bin/bash
+#Author: Utsav Sharma
+
+read -p "Enter a word: " word
+echo "Your Word is : $word"
+echo "My current id is: `id`"
+word=`tr -dc "[:alnum]" <<< $word`
+dict $word

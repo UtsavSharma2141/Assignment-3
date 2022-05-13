@@ -1,0 +1,9 @@
+#File: blork@.service
+#Author: Utsav Sharma
+
+[Unit]
+Description=Defining routine for blork service
+
+[Service]
+ExecStart=-/home/ceng320/blorkDemo
+StandardInput=socket

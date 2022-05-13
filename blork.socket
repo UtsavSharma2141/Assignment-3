@@ -1,0 +1,25 @@
+# File: blork.socket
+# Course: CENG320
+# Author: king 
+
+[Unit]
+Description=Implementing the blork service
+
+[Socket]
+ListenStream=24
+#ListenDatagram=nn  - for UDP only
+Accept=yes
+
+
+[Install]                      
+WantedBy=multi-user.target     
+
+#Added the [Install] section
+#Issued commands 
+#   systemctl restart blork.socket
+#   systemctl enable  blork.socket
+#   systemctl status  blork.socket
+#The service should show as enabled & it will be available on reboot.
+#Test using telnet localhost 24
+#  Respond to prompt by entering phrases, then quit
+#Test on Windows using telnet yourUbuntuIPAddress 24

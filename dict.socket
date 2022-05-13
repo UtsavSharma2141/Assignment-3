@@ -1,0 +1,12 @@
+#file: dict.socket
+#Author: Utsav Sharma
+
+[Unit]
+Description=Implementing the dict services
+
+[Socket]
+ListenStream=1089
+Accept=yes
+
+[Install]
+WantedBy=multi-user.target

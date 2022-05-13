@@ -1,0 +1,10 @@
+#File: daytime@.socket
+#Course: CENG320
+#Author: king
+
+[Unit]
+Description=Defining routine for daytime service
+
+[Service]
+ExecStart=-/bin/date 
+StandardInput=socket

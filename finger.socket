@@ -1,0 +1,23 @@
+# File: finger.socket
+# Course: CENG320
+# Author: king 
+
+[Unit]
+Description=CENG320 - reestablishing the finger service
+
+[Socket]
+ListenStream=79
+Accept=yes
+
+[Install]                      
+WantedBy=multi-user.target     
+
+#Added the [Install] section
+#Issued commands 
+#   systemctl restart finger.socket
+#   systemctl enable  finger.socket
+#   systemctl status  finger.socket
+#The service should show as enabled & it will be available on reboot.
+
+#Test using finger  yourUserId@localhost  - should show your .plan and .project 
+#Test on Windows using finger yourUserId@yourUbuntuIPAddress   - same result

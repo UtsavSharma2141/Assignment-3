@@ -1,0 +1,10 @@
+[Unit]
+Description=Implementing the echo service
+
+[Socket]
+ListenStream=7
+#ListenDatagram=nn  - for UDP only
+Accept=yes
+
+[Install]
+WantedBy=multi-user.target

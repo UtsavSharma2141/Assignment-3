@@ -1,0 +1,6 @@
+[Unit]
+Description=Defining routine for echo service
+
+[Service]
+ExecStart=-/bin/cat -n
+StandardInput=socket

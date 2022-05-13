@@ -1,0 +1,10 @@
+#File: daytime.socket
+[Unit]
+Description=Implementing the daytime service
+
+[Socket]
+ListenStream=13
+Accept=yes
+
+[Install]
+WantedBy=multi-user.target

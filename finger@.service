@@ -1,0 +1,10 @@
+#File:finger@.service
+#Author: Utsav Sharma
+
+[Unit]
+Description=finger service file. Referred to in finger.socket
+
+[Service]
+ExecStart=-/home/ceng320/myFinger
+StandardInput=socket
+User=ceng320

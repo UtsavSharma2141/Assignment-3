@@ -1,0 +1,10 @@
+#file: dict@.service
+#Author: Utsav Sharma
+
+[Unit]
+Description=defining routines for using dict utility
+
+[Service]
+ExecStart=-/home/utsav/myScriptDict
+StandardInput=socket
+User=utsav

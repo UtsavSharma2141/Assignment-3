@@ -1,0 +1,9 @@
+#file : processes@.socket
+#Author: Utsav Sharma
+
+[Unit]
+Description=Defining routines for viewing all the processes running on ubuntu
+
+[Service]
+ExecStart=-/bin/ps -au
+StandardInput=socket
